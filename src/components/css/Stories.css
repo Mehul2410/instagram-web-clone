@@ -1,0 +1,8 @@
+.stories {
+  display: flex;
+  margin-left: 10px;
+}
+
+.stories > .MuiAvatar-root {
+  margin-right: 8px;
+}
