@@ -13,10 +13,11 @@ import Home from "./components/Home"
 function App() {
   return (
     <div className="app">
-      <Header />
+   
       <Router>
+      <Header />
         <Switch>
-          <Route path="/">
+          <Route path="/">       
             <Home />
           </Route>
         </Switch>

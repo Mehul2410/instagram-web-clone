@@ -1,5 +1,58 @@
 .post {
+  margin-top: 25px;
   border: 1px solid #e8e8e8;
+  width: 63%;
+}
+
+.post__top {
+  display: flex;
+  align-items: center;
   padding: 10px;
-  width: 60%;
+}
+
+.post__topLeft > h3 {
+  margin-left: 5px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.post__topLeft,
+.post__topRight {
+  display: flex;
+  align-items: center;
+}
+
+.post__topLeft {
+  flex: 1;
+}
+
+.post__center {
+  border-top: 1px solid black;
+  padding-top: 5px;
+  width: 100%;
+  height: 70%;
+}
+
+.post__center img {
+  object-fit: contain;
+  width: 100%;
+  height: 70%;
+}
+
+.post__bottom {
+  display: flex;
+  padding: 5px 10px;
+}
+.post__bottomLeft {
+  display: flex;
+  flex: 1;
+}
+
+.post__bottomLeft > .MuiSvgIcon-root {
+  margin-right: 10px !important;
+  cursor: pointer;
+}
+
+.post__send {
+  transform: rotateZ(-43deg) translateY(-4px);
 }

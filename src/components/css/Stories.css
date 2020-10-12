@@ -1,8 +1,13 @@
 .stories {
   display: flex;
   margin-left: 10px;
+  width: 60%;
+  overflow-x: scroll;
+  padding: 12px;
 }
 
 .stories > .MuiAvatar-root {
-  margin-right: 8px;
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
 }

@@ -8,6 +8,12 @@ const Home = () => {
         <div className="home">
             <Stories />
             <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            
         </div>
     )
 }

@@ -14,6 +14,15 @@ const Stories = () => {
             <Avatar />
             <Avatar />
             <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
         </div>
     )
 }
