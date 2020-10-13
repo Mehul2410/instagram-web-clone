@@ -1,6 +1,10 @@
 .header {
   height: 10%;
   border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 }
 
 .header__left a > img {
@@ -9,7 +13,7 @@
 
 .header__body {
   display: flex;
-  width: 60%;
+  width: 70%;
   align-items: center;
   margin: auto;
   padding: 5px;
@@ -49,8 +53,10 @@
   cursor: pointer;
 }
 
-.header__send {
-  transform: rotateZ(-40deg) translateX(2px);
+.header__right a {
+  text-decoration: none;
+  color: unset;
+  transform: rotateZ(-33deg) translateX(-7px) translateY(-7px);
 }
 
 .header__avatar {

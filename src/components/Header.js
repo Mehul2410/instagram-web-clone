@@ -29,7 +29,7 @@ const Header = () => {
             </div>
             <div className="header__right">
             <HomeRoundedIcon />
-            <SendRoundedIcon className="header__send"/>
+            <Link to ="/Chat"><SendRoundedIcon className="header__send"/></Link>
             <ExploreRoundedIcon />
             <FavoriteBorderRoundedIcon />
             <div className="header__avatar"><Avatar /></div>

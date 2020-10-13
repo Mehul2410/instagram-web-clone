@@ -8,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./components/Home"
-
+import Chat from './components/Chat'
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
       <Router>
       <Header />
         <Switch>
+        <Route path="/Chat">       
+            <Chat />
+          </Route>
           <Route path="/">       
             <Home />
           </Route>

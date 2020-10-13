@@ -1,0 +1,30 @@
+.userChat {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userChat:hover {
+  background-color: #efefef;
+}
+.userChat > .MuiAvatar-root {
+  height: 55px;
+  width: 55px;
+}
+
+.userChat__Info {
+  margin-left: 8px;
+}
+
+.userChat__Info > h4 {
+  font-size: smaller;
+  font-weight: 500;
+  font-family: "Chivo", sans-serif;
+}
+
+.userChat__Info > p {
+  font-size: small;
+  font-weight: 300;
+  color: #a2a2a2;
+}
