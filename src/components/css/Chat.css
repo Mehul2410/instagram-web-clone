@@ -27,13 +27,6 @@
   display: flex;
 }
 
-.chat__message {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  height: 100%;
-}
-
 .chat__messageTop {
   width: 100%;
   height: 60px;
@@ -97,6 +90,14 @@
   width: 65%;
   height: 100%;
 }
+
+.chat__message {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+}
+
 .chat__screen {
   width: 100%;
   position: relative;
@@ -142,4 +143,9 @@
 
 .chat__center {
   flex: 1;
+}
+
+.chat__bottom {
+  display: flex;
+  justify-content: space-evenly;
 }

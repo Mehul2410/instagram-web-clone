@@ -5,13 +5,24 @@ import UserChat from './UserChat'
 import OpenInNewRoundedIcon from '@material-ui/icons/OpenInNewRounded';
 import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
 import ChatBox from "./ChatBox"
+import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
+import InsertEmoticonSharpIcon from '@material-ui/icons/InsertEmoticonSharp';
+import ImageRoundedIcon from '@material-ui/icons/ImageRounded';
 
 const Chat = () => {
+    const [input, setInput] = useState("");
+    // const [ option , setOption] = useState(false); 
+     console.log(input)
+     const sendMessage = (event) => {
+        event.preventDefault();
+        setInput("");
+      };
     return (
+        <>
         <div className="chat">
             <div className="chat__box">
                 <div className="chat__sidebar">
-                    <div className="chat__sidebarTop">
+                    <div className="chat__sidebarTop" >
                         <h4>Direct</h4>
                             <OpenInNewRoundedIcon />
                            
@@ -34,7 +45,7 @@ const Chat = () => {
                     <UserChat />
                     <UserChat />
                 </div>
-                
+                {/* chat__message  */}
                 <div className="chat__message">
                     <div className="chat__messageTop">
             <Avatar />
@@ -49,10 +60,20 @@ const Chat = () => {
                         <ChatBox />
                     </div>
                         <div className="chat__bottom">
-                            <input type="text" placeholder="Message..." />
-                        </div>
+                            <InsertEmoticonSharpIcon />
+                            <input 
+                            type="text" 
+                            placeholder="Message..." 
+                            value={input}
+                            onChange={(event) => setInput(event.target.value)}
+                             />
+                            <button type="submit" onClick={sendMessage} ></button>
+                            
+                            <ImageRoundedIcon />
+                            <FavoriteBorderRoundedIcon />
+                       </div>   
                 </div>
-                    <div className="chat__view">
+                    <div className="chat__view ">
                     <div className="chat__screen">   
                     <div className="fa fa-send-o"></div>
                     <div className="chat__front">
@@ -60,17 +81,11 @@ const Chat = () => {
                     <p>Send private photos and messages to a friend or group.</p>
                     <button>Send Message</button>
                     </div>
-                    
                     </div>
                     </div>
-                  
-                
-                     
-            
                 </div>
-                   
             </div>
-        
+            </>
     )
 }
 
